@@ -1,0 +1,47 @@
+Summarise your findings here (see specification).
+
+In order to figure out each mystery board's difficulty, I tried both methods. 
+One of the methods was to use a timer library. I started the time at the start 
+and end of the function execution in the main. I worked out the time difference 
+to see how long the function took. 
+
+
+This resulted in the following findings: 
+
+Mystery1 is a Sudoku board of "extremely hard" difficulty: 161547
+
+Mystery2 is a Sudoku board of impossible to solve.
+
+Mystery3 is a Sudoku board of "hard" difficulty:4747
+
+
+
+Another method I used was a static counter. 
+
+This counter would get initialised in the function at the begining and then 
+keep addidng to the counter the number of times the function was called until 
+the board was complete. This was a more innacurate method since it could not restart 
+when one of the boards was not complete (the impossible board).
+
+This resulted in the following findings: 
+
+Mystery1 is a Sudoku board of "extremely hard" difficulty: 421457 counts
+
+Mystery2 is a Sudoku board of impossible to solve.
+
+Mystery3 is a Sudoku board of "hard" difficulty: 25667 counts
+ 
+
+In both cases, the Mystery2 file had less recursions and less time as it run out of 
+viable values and returned false. 
+
+
+
+In conclusion, both of the methods above indicate the following findings: 
+
+Mystery1 is a Sudoku board of "extremely hard" difficulty.
+
+Mystery2 is a Sudoku board of impossible to solve.
+
+Mystery3 is a Sudoku board of "hard" difficulty.
+
